@@ -1,5 +1,7 @@
 # PortfolioProject
 
+![](portfolioexample.png)
+
 ## Overview
 This website contains highlights of me and what I have done so far as well as ways to connect with me. 
 
@@ -13,9 +15,6 @@ Here is a link to the deployed webpage: []
 
 ## Programs 
 HTML, CSS, SCSS, Javascript, jQuery and Font Awesome
-
-## License 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 ## Author/s
 Jonathan Stillman
