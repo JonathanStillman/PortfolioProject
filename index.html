@@ -2,227 +2,364 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jonathan Stillman - Home</title>
-
-    <!-- Bootstrap Code Here -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Glidejs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio Website</title>
 </head>
 
 <body>
-
-    <!-- Navigation Bar Begins Here -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="">Jonathan Stillman</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigational Options Presented On Nav Bar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
+  <!-- Header -->
+  <header id="home" class="header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1>Full Stack Web Developer<span>.</span></h1>
         </div>
 
-        <!-- Minimizing Window Animation Begins Here // Menu Drop Down -->
-        <div class="fixed-top">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Jonathan Stillman</h5>
-                    <span class="text-muted">Navigational Menu</span>
-
-                    <!-- Navigation Items Will Drop Down -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>YouTuber<span>.</span></h1>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link scroll-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link scroll-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link scroll-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link scroll-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works" class="nav-link scroll-link">Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link scroll-link">Contact</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </nav>
+    <!-- Hero -->
+    <div class="hero">
+      <h3>Hello, my name is</h3>
+      <h1>Jonathan Stillman</h1>
+      <h4>And I'm a <span id="type1"></span></h4>
+      <a href="#contact">Contact Me!</a>
+    </div>
 
-    <!-- Header Content Begins Here -->
-    <header>
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1>About Me</h1>
-                <p class="lead text-muted">My name is Jonathan Stillman and I am a Full Stack Web Developer.
-                    Web Development is a passion of mine, so I thought I'd make something of it.</p>
+    <img class="banner" src="./images/bg.png" alt="" />
+
+    <div class="icons">
+      <span><i class="fab fa-facebook-f"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <section class="section about" id="about">
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+
+    <div class="about-center container">
+      <div class="left" data-aos="fade-right" data-aos-duration="2000">
+        <img src="./images/profile1.jpg" alt="" />
+      </div>
+      <div class="right" data-aos="fade-left" data-aos-duration="2000">
+        <h1>I'm Jonathan a <span id="type2"></span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          placeat inventore rerum tempore cupiditate, amet adipisci aut eius
+          facilis quisquam magni ratione maxime officiis earum blanditiis
+          magnam illum obcaecati vero? Odit ipsa facilis officiis fuga
+          voluptate similique sunt exercitationem voluptatibus, illo et fugit
+          eveniet provident quo atque, nesciunt explicabo tenetur!
+        </p>
+        <a href="https://github.com/JonathanStillman" class="btn">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section theme" id="services">
+    <div class="title">
+      <h1>My Services</h1>
+    </div>
+
+    <div class="services-center container">
+      <div class="service" data-aos="fade-down" data-aos-duration="2000">
+        <span><i class="fab fa-accusoft"></i></span>
+        <h2>Web Design</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          exercitationem numquam porro asperiores neque architecto.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-duration="2000">
+        <span><i class="fas fa-chart-line"></i></span>
+        <h2>Full Stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          exercitationem numquam porro asperiores neque architecto.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-down" data-aos-duration="2000">
+        <span><i class="fas fa-blender-phone"></i></span>
+        <h2>API Development</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          exercitationem numquam porro asperiores neque architecto.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="title">
+      <h1>My Skills</h1>
+    </div>
+
+    <div class="skills-center container">
+      <div class="skills-left" data-aos="fade-right" data-aos-duration="2000">
+        <div class="skills-box">
+          <h4>HTML5</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar html"></div>
+            <span>95%</span>
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>CSS</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar css"></div>
+            <span>85%</span>
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>JavaScript</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar javascript"></div>
+            <span>90%</span>
+          </div>
+        </div>
+        <div class="skills-box">
+          <h4>Nodejs</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar nodejs"></div>
+            <span>85%</span>
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <h4>React</h4>
+          <div class="skills-ilt">
+            <div class="skills-bar react"></div>
+            <span>80%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right" data-aos="fade-left" data-aos-duration="2000">
+        <h3>My creative skills and experience</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+          tempora distinctio sed. Animi, doloribus est. Suscipit praesentium
+          tenetur libero eos! Suscipit voluptatem qui, nulla accusantium
+          deleniti nam recusandae officiis possimus at voluptate cupiditate
+          soluta nostrum deserunt consequuntur, ut quis eligendi? Quidem et
+          doloremque cupiditate veniam optio corporis voluptatum, animi nemo!
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="section theme" id="teams">
+    <div class="title">
+      <h1>My Works</h1>
+    </div>
+
+    <div class="teams-center container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile1.jpg" alt="" />
+                </div>
+                <h3>Project 1</h3>
                 <p>
-                    <a href="contact.html" class="btn btn-primary my-2">Contact</a>
-                    <a href="portfolio.html" class="btn btn-secondary my-2">My Works</a>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
                 </p>
-            </div>
-        </section>
-    </header>
-
-    <main role="main">
-        <!-- Marketing messaging and featurettes
-            ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Photographer</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
-                        ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Praesent commodo cursus magna.</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Musician</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-                        tortor mauris condimentum nibh.</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Traveler</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh.</p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile2.jpg" alt="" />
                 </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+                <h3>Project 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile3.jpg" alt="" />
                 </div>
-            </div>
-
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                            yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                <h3>Project 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile4.jpg" alt="" />
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+                <h3>Project 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile3.jpg" alt="" />
                 </div>
-            </div>
-
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                <h3>Project 5</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
+                </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="team">
+                <div class="img-cover">
+                  <img src="./images/profile5.jpg" alt="" />
                 </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
+                <h3>Project 6</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, quo?
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <hr class="featurette-divider">
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="title">
+      <h1>Contact Me</h1>
+    </div>
 
-            <!-- /END THE FEATURETTES -->
+    <div class="contact-center container">
+      <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
+        <h2>Get in Touch</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          praesentium quibusdam ratione, cum ducimus minus iure saepe ipsum
+          repudiandae. Cum adipisci cumque dicta suscipit fuga aliquid
+          blanditiis quo quia vitae.
+        </p>
+        <div>
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <span class="content">
+            <h3>Name</h3>
+            <span>Jonathan Stillman</span>
+          </span>
+        </div>
 
-        </div><!-- /.container -->
+        <div>
+          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span class="content">
+            <h3>Address</h3>
+            <span>United States</span>
+          </span>
+        </div>
 
-        <!-- Footer Begings Here -->
-        <footer class="page-footer font-small blue bg-dark">
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://github.com/JonathanStillman"> github.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </main>
+        <div>
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <span class="content">
+            <h3>Email</h3>
+            <span>JonathanStillman@gmail.com</span>
+          </span>
+        </div>
+      </div>
+      <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+        <form class="form">
+          <h2>Message me</h2>
+          <div>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea cols="10" rows="10" placeholder="Describe Project"></textarea>
 
-    <!-- Scripting Begins Here -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+          <a href="#" class="btn">Send message</a>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <p>Created By <span>Jonathan Stillman</span> | &copy; 2020 All rights reserved.</p>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Typeit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Glidejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Custom Script -->
+  <script src="index.js"></script>
 </body>
 
 </html>
